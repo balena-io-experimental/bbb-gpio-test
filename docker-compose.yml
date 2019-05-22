@@ -1,0 +1,8 @@
+version: '2'
+services:
+  gpio:
+    build: ./gpio
+    privileged: true
+    restart: always
+    tty: true
+    network_mode: host
